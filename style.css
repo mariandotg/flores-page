@@ -33,7 +33,15 @@ html {
 }
 
 body {
+  height: 100%;
   background-color: #0E0A07;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body > div {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,4 +97,20 @@ path {
 
 .btn:hover {
   background-color: #e9801e;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #ffffff;
+  padding: 32px 64px;
+}
+
+footer > img {
+  width: 16px;
+  height: 16px;
 }
