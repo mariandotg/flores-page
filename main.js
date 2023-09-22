@@ -5,8 +5,20 @@ startBtn.addEventListener('click', () => {
   console.log("click")
   var animatedElements = document.querySelectorAll('.hidden');
   animatedElements.forEach(function (element) {
-    element.classList.remove('hidden')
-    element.classList.add('animated')
+    if(element.classList.contains('first')){
+        element.classList.remove('hidden')
+        element.classList.add('animated')
+    } else if(element.classList.contains('second')){
+      setTimeout(() => {
+        element.classList.remove('hidden')
+        element.classList.add('animated')
+      }, 1500)
+    } else {
+      setTimeout(() => {
+        element.classList.remove('hidden')
+        element.classList.add('animated')
+      }, 4000)
+    }
     element.addEventListener('animationstart', function () {
       setTimeout(() => {
         element.classList.remove('fill-transp')
