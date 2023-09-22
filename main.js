@@ -8,7 +8,9 @@ startBtn.addEventListener('click', () => {
     element.classList.remove('hidden')
     element.classList.add('animated')
     element.addEventListener('animationstart', function () {
-      setTimeout(() => element.classList.remove('fill-transp'), 1800)
+      setTimeout(() => {
+        element.classList.remove('fill-transp')
+      }, 1800)
     });
   });
 })
