@@ -103,14 +103,23 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  flex-direction: column;
+  gap: 2px;
   margin-top: auto;
   font-family: 'IBM Plex Mono', monospace;
   color: #ffffff;
   padding: 32px 64px;
 }
 
-footer > img {
+footer > span > img {
   width: 16px;
   height: 16px;
+  margin-left: 8px;
+}
+
+footer > span {
+  font-family: 'IBM Plex Mono', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
